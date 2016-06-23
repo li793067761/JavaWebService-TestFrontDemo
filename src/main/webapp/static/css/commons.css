@@ -1,0 +1,72 @@
+@CHARSET "utf-8";
+body, textarea {font-family:"Microsoft YaHei" ! important;font-size:14px; color:#666666;background-color:#FFFFFF;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {margin: 0px;padding: 0px;}
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+table tr td .row {padding-bottom:0px;}
+input, select, textarea, button { vertical-align: middle;}
+img { border: 0px; }
+ul, ol { list-style: none; margin: 0px; padding: 0px;}
+li { list-style: none outside none; }
+pre {white-spacere-wrap; word-wrap: break-word; }
+input::-ms-clear{display : none; }
+em, i { font-weight: normal; font-style: normal; }
+table { border-collapse: collapse; table-layout: fixed; border-spacing: 0px;}
+td, th { word-wrap: break-word; word-break: break-all;}
+a {color:#666666; text-decoration: none;}
+a:hover { color: #0355a1; text-decoration:none;}
+
+#-----------------引入样式-------------------------
+.form-box {
+	margin-top: 35px;
+}
+.form-bottom {
+	padding: 25px 25px 30px 25px;
+	background: #444;
+	background: rgba(0, 0, 0, 0.3);
+	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
+	text-align: left;
+}
+.form-top {
+	overflow: hidden;
+	padding: 0 25px 15px 25px;
+	background: #444;
+	background: rgba(0, 0, 0, 0.35);
+	-moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
+	text-align: left;
+}
+.form-top-left {
+	float: left;
+	width: 100%;
+	padding-top: 25px;
+}
+
+.form-top-left h3 { margin-top: 0; color: #fff; }
+.form-top-left p { opacity: 0.8; color: #fff; }
+#----------------------------------------------------------------
+
+.fillHeight {height: 100%;}
+.footer {margin:0px auto;text-align: center;position:fixed;bottom:0; }
+.footerColor {background-color:#006CBF;}
+.loginPanel {position: relative;background:rgba(255,255,255,0.7);margin-top: 5%;border: 0px solid rgba(255,255,255,0.7);-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;padding: 5% 5% 5% 5%; }
+.loginInput {width:80%;opacity:1;}
+.transparent {background:rgba(255,255,255,0.7);}
+.fillet {border: 0px solid rgba(255,255,255,0.7);-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;}
+.mt10 {margin-top: 10%;}
+.position-rel{position: relative;};
+
+#--------------重写的Flat-UI样式--------
+.form-bottom .form-control:focus {
+  border-color: #1abc9c;
+}
+.form-bottom .form-control:focus + .login-field-icon {
+  color: #1abc9c;
+}
+.form-bottom .login-field-icon {
+  color: #bfc9ca;
+  font-size: 16px;
+  position: absolute;
+  right: 6%;
+  top: 3px;
+  -webkit-transition: all .25s;
+          transition: all .25s;
+}

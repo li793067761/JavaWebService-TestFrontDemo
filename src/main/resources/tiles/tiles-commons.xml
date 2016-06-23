@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+	   "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+	   "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- 系统登陆页面 -->
+	<definition name="sysLogin.page" extends="login.definition">
+		<put-attribute name="content" value="/WEB-INF/views/sysLogin.jsp"/>
+	</definition>
+	
+	<!-- 系统主页页面 -->
+	<definition name="index.page" extends="index.definition">
+		<put-attribute name="content" value="/WEB-INF/views/showNews/indexNews.jsp"/>
+	</definition>
+	
+	<!-- 系统主页页面 -->
+	<definition name="email.page" extends="index.definition">
+		<put-attribute name="content" value="/WEB-INF/views/sendEmail/emailSend.jsp"/>
+	</definition>
+</tiles-definitions>

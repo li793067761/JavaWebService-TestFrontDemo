@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>     
+    <!-- 前端页面模板 -->
+   <definition name="template_page" template="/WEB-INF/templates/layout.jsp">
+	<put-attribute name="header" value="/WEB-INF/views/layout/header.jsp" />
+	<put-attribute name="menu" value="/WEB-INF/views/layout/menu.jsp" />
+	<put-attribute name="body" value="" />
+	<put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
+   </definition>
+   	<!-- 登录布局页面 -->
+	<definition name="login.definition" template="/WEB-INF/views/layout/loginLayout.jsp">
+		<put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp"/>
+	</definition>
+	
+	<!-- 基础布局页面 -->
+	<definition name="index.definition" template="/WEB-INF/views/layout/defaultLayout.jsp">
+		<put-attribute name="head" value="/WEB-INF/views/layout/head.jsp"/>
+		<put-attribute name="menu" value="/WEB-INF/views/layout/menu.jsp"/>
+	</definition>
+</tiles-definitions>
